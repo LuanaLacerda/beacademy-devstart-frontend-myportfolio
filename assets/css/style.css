@@ -257,7 +257,10 @@ header .container nav .menu-social {
 
 }
 
-.s-cases .container .cases .case img {}
+.s-cases .container .cases .case img {
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
 
 /* Footer */
 

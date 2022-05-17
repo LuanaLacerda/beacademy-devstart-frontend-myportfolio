@@ -27,9 +27,12 @@ header .container nav .menu {
     justify-content: space-between;
 }
 
+
 header .container nav .menu li {
     margin-right: 4.8rem;
+    transition: color 0.2s;
 }
+
 
 header .container nav .menu-social {
     display: flex;
@@ -38,6 +41,16 @@ header .container nav .menu-social {
     margin-left: 4rem;
     gap: 3.4rem;
 }
+
+header .container nav .menu-social li a {
+    transition: all 0.2s;
+}
+
+header .container nav .menu-social li a:hover {
+    filter: brightness(0.9);
+    transform: translate(-8%);
+}
+
 
 /* Section Hero */
 
@@ -150,6 +163,12 @@ header .container nav .menu-social {
     border-radius: 4px;
     margin-right: 3.1rem;
     cursor: pointer;
+    transition: all 0.2s;
+}
+
+.s-success .container .cards .card:hover {
+    filter: brightness(0.9);
+    transform: scale(1.01);
 }
 
 .s-success .container .cards .card .card-title {
@@ -218,7 +237,14 @@ header .container nav .menu-social {
 
     gap: 1.6rem;
     margin-top: 3.2rem;
+}
 
+.s-about .container .about-me ul li a {
+    transition: all 0.2s;
+}
+
+.s-about .container .about-me ul li:hover {
+    transform: translate(-8%)
 }
 
 .s-about .container .about-me ul li img {
@@ -272,6 +298,60 @@ header .container nav .menu-social {
     cursor: pointer;
     margin-top: -1.6rem;
 }
+
+/* Contact */
+
+.s-contact {
+    padding-top: 4rem;
+    padding-bottom: 5.1rem;
+}
+
+.s-contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s-contact .container .title-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 100%;
+    max-width: 34.3rem;
+}
+
+.s-contact .container .title-contact .tag {
+    width: 100%;
+    max-width: 13.2rem;
+
+}
+
+.s-contact .container .title-contact h1 {
+    font-weight: 900;
+
+}
+
+.s-contact .container .form-contact {
+    width: 100%;
+    max-width: 48.6rem;
+}
+
+.s-contact .container .form-contact .input-group input[type=text],
+.s-contact .container .form-contact .input-group input[type=email] {
+    margin-bottom: 3.1rem;
+}
+
+
+
+.input-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.7rem;
+}
+
+
+
 
 
 
